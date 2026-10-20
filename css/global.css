@@ -32,6 +32,7 @@ a.house-link {
     padding: 12px;
     background-color: aqua;
     text-decoration: none;
+    color: black;
 }
 
 a.house-link:hover {
