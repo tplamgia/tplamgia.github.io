@@ -42,3 +42,15 @@ a.house-link {
 a.house-link:hover {
     opacity: 0.85;
 }
+
+a.house-drive-link {
+    width: 100%;
+    background-color: black;
+}
+
+a svg {
+    width: 24px;
+    height: 24px;
+    margin: 12px;
+    color: white;
+}
