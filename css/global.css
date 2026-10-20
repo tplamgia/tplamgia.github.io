@@ -28,37 +28,3 @@ header a {
 header a:hover {
     opacity: 0.85;
 }
-
-a.house-link {
-    padding: 12px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-}
-
-a.house-link:hover {
-    opacity: 0.85;
-}
-
-a.house-drive-link {
-    display: flex;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background-color: black;
-}
-
-a svg {
-    margin: 12px;
-    fill: white;
-}
-
-.house-table {
-    flex-direction: column;
-}
-
-.house-table p {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    padding: 12px;
-    background-color: aqua;
-}
