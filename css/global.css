@@ -2,11 +2,10 @@
 html {
     margin: 0px;
     padding: 0px;
+    font-family: 'Courier New', Courier, monospace, sans-serif
 }
 
-body {
-    font-family: system-ui, sans-serif
-}
+body {}
 
 header {
     display: flex;
