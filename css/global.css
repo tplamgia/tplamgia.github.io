@@ -7,6 +7,33 @@ body {
 header {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     gap: 12px;
+}
+
+header div {
+    display: inherit;
+    gap: 12px;
+}
+
+header a {
+    padding: 12px;
+    background-color: aqua;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    opacity: 0.85;
+}
+
+a.house-link {
+    padding: 12px;
+    background-color: aqua;
+    text-decoration: none;
+}
+
+a.house-link:hover {
+    opacity: 0.85;
 }
