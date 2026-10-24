@@ -48,33 +48,18 @@ button {
     text-decoration: none;
 }
 
-section.houseLinks {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 12px;
-    overflow-x: auto;
-    white-space: nowrap;
-    max-width: 100%;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-}
-
-section.houseTable {
+main section {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-section.houseTable div {
+main section div {
     display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
     gap: 12px;
-}
-
-section.houseTable div button {
-    background-color: aqua;
-}
-
-section.houseTable div a {
-    background-color: black;
-    color: white;
 }
