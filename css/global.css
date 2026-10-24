@@ -48,6 +48,12 @@ button {
     text-decoration: none;
 }
 
+header section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 main section {
     display: flex;
     flex-direction: column;
