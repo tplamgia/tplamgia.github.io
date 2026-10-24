@@ -26,8 +26,126 @@
             </a>
         </div>
     </header>
-    <main></main>
+    <main>
+        <section class="houseTable">
+            <div>
+                <button data-copy="67 Đường Số 4">
+                    67 Đường Số 4
+                </button>
+                <a href="https://drive.google.com/drive/folders/1-3knyiFJmXDOLGa29d_Vr0WqgEw7Th9c?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/hzckzy794" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="000 nhà 67 Đường Số 4">
+                    000
+                </button>
+                <a href="https://drive.google.com/drive/folders/10xSIoUYiEVmfeyoWR7wbrg7hKW6iJKFe?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/jqk4zkwcqhbyk2w3oyuw" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="001 nhà 67 Đường Số 4">
+                    001
+                </button>
+                <a href="https://drive.google.com/drive/folders/112z4tl0CsRYCnNCr5gmPrhaJogikYVCu?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/efjiu9lu3hfymfomw8a8" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="101 nhà 67 Đường Số 4">
+                    101
+                </button>
+                <a href="https://drive.google.com/drive/folders/116Ac1B4v_J9MmkN9SMVvkbHoBEzJ0Sxx?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/ajllxw301" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="102 nhà 67 Đường Số 4">
+                    102
+                </button>
+                <a href="https://drive.google.com/drive/folders/1189aAAuI7obx1YqvR7SZC8ZouEgzWwV0?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/gttccd976" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="201 nhà 67 Đường Số 4">
+                    201
+                </button>
+                <a href="https://drive.google.com/drive/folders/11CPDioTShE2bFwt1GIR_wSXWGra-tufh?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/iontmw343" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="202 nhà 67 Đường Số 4">
+                    202
+                </button>
+                <a href="https://drive.google.com/drive/folders/118dDsruUtFiRv8f-t_RHhJ8KZ6bM2AKf?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/gwluxiyitf8tbvugnkz2" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="301 nhà 67 Đường Số 4">
+                    301
+                </button>
+                <a href="https://drive.google.com/drive/folders/11CvFLKdaP-j6n5s3LGrUudhGl-YeGlta?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/ghtdwf951" target="_blank">
+                    Zalo
+                </a>
+            </div>
+        </section>
+    </main>
     <footer></footer>
+
+    <script>
+        document.querySelectorAll("button[data-copy]").forEach(button => {
+            const originalText = button.textContent;
+
+            button.addEventListener("click", async () => {
+                try {
+                    await navigator.clipboard.writeText(button.dataset.copy);
+                    button.textContent = "Đã copy!";
+                } catch (error) {
+                    button.textContent = "Copy thất bại!";
+                }
+
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 
 </html>
