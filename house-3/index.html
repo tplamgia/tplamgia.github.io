@@ -26,8 +26,162 @@
             </a>
         </div>
     </header>
-    <main></main>
+    <main>
+        <section class="houseTable">
+            <div>
+                <button data-copy="92B Trương Phước Phan">
+                    92B Trương Phước Phan
+                </button>
+                <a href="https://drive.google.com/drive/folders/1003AFKKqvh3Igjikw_r5HGNOLMJM6Gcs?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/lcqhpp719" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="000 nhà 92B Trương Phước Phan">
+                    000
+                </button>
+                <a href="https://drive.google.com/drive/folders/11FLpdh0VIysvBI6miA2g9biZ5KkmcsHp?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/ulyhqn659" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="001 nhà 92B Trương Phước Phan">
+                    001
+                </button>
+                <a href="https://drive.google.com/drive/folders/11FzNS4iXcwSrM4hWwmvkojb07KvpG9RZ?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/yurvso042" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="002 nhà 92B Trương Phước Phan">
+                    002
+                </button>
+                <a href="https://drive.google.com/drive/folders/11MrVSkftjVkbvQkWxoPpCwWhN911VxoA?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/qrjmule7zpiyvbdsvspj" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="003 nhà 92B Trương Phước Phan">
+                    003
+                </button>
+                <a href="https://drive.google.com/drive/folders/11PPChFt_Bw81j-k35tjzzoHuMjjSuEJC?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/iubrg5uavs9duzwva9qp" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="004 nhà 92B Trương Phước Phan">
+                    004
+                </button>
+                <a href="https://drive.google.com/drive/folders/11bzMXiSX_JNwbIguxPpaKWdTWi7hYL33?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/kgpnnm335" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="005 nhà 92B Trương Phước Phan">
+                    005
+                </button>
+                <a href="https://drive.google.com/drive/folders/11cq8LzdAGyu2Tf1CGz0Ljy8qmDxF6n-U?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/emrcha885" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="006 nhà 92B Trương Phước Phan">
+                    006
+                </button>
+                <a href="https://drive.google.com/drive/folders/11dlMEVLFtm9kx1FuFPdz50JLKgBpyxZg?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/butbxnmruqbwd7rh4c8r" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="007 nhà 92B Trương Phước Phan">
+                    007
+                </button>
+                <a href="https://drive.google.com/drive/folders/11g2R9BeYIOK36zs7nMJbbGKX5n5hS-OJ?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/edztcmt9qvdqwlcp63x1" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="008 nhà 92B Trương Phước Phan">
+                    008
+                </button>
+                <a href="https://drive.google.com/drive/folders/11qfLzFBEiWm-DJuvEX3JLalcP6XlCQpZ?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/b7yupmdvapto03nsiqi8" target="_blank">
+                    Zalo
+                </a>
+            </div>
+            <div>
+                <button data-copy="009 nhà 92B Trương Phước Phan">
+                    009
+                </button>
+                <a href="https://drive.google.com/drive/folders/11xBk6_CtVMcK6vj3f1Ca87FWu4umSW8d?usp=drive_link"
+                    target="_blank">
+                    Drive
+                </a>
+                <a href="https://zalo.me/g/in1hmgxrm4dld9odhebc" target="_blank">
+                    Zalo
+                </a>
+            </div>
+        </section>
+    </main>
     <footer></footer>
+
+    <script>
+        document.querySelectorAll("button[data-copy]").forEach(button => {
+            const originalText = button.textContent;
+
+            button.addEventListener("click", async () => {
+                try {
+                    await navigator.clipboard.writeText(button.dataset.copy);
+                    button.textContent = "Đã copy!";
+                } catch (error) {
+                    button.textContent = "Copy thất bại!";
+                }
+
+                setTimeout(() => {
+                    button.textContent = originalText;
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 
 </html>
