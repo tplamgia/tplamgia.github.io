@@ -47,8 +47,11 @@ button:hover {
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 12px;
     margin-bottom: 12px;
+    gap: 12px;
 }
 
 main section {
