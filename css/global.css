@@ -29,6 +29,10 @@ header a:hover {
     opacity: 0.85;
 }
 
+main {
+    margin: 12px;
+}
+
 p,
 a,
 button {
