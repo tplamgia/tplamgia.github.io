@@ -8,8 +8,12 @@ html {
 header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    gap: 12px;
+}
+
+header section {
+    display: flex;
+    flex-wrap: wrap;
     gap: 12px;
 }
 
@@ -40,12 +44,6 @@ button {
 a:hover,
 button:hover {
     opacity: 0.85;
-}
-
-header section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
 }
 
 main {
