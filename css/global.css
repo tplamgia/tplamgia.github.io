@@ -42,15 +42,15 @@ button:hover {
     opacity: 0.85;
 }
 
-main {
-    margin-top: 12px;
-    margin-bottom: 12px;
-}
-
 header section {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+}
+
+main {
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 main section {
