@@ -32,13 +32,13 @@ button {
 }
 
 a {
-    background-color: black;
-    color: white;
+    background-color: aqua;
+    color: black;
 }
 
 button {
-    background-color: aqua;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 a:hover,
@@ -62,10 +62,6 @@ main section {
 
 main section div {
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    max-width: 100%;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    flex-wrap: wrap;
     gap: 12px;
 }
