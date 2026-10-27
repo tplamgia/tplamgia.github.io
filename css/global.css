@@ -30,6 +30,7 @@ button {
     padding: 12px;
     border: none;
     text-decoration: none;
+    align-items: center;
 }
 
 a {
